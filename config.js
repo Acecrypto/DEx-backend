@@ -1,23 +1,23 @@
 module.exports = {
     contractDExAddrs: [
-        {addr: '0x51ba4d11f6ed41748f8ebcb1890efb6d3e369f59', info: 'Deployed 04/16/2018'},
+        {addr: '0x9B5bCcA9CfD9F693D217f3A3CE9486eA71800b10', info: 'Deployed Current'},
     ],
     ethTestnet: true,
     port: '9000',
-    ethRPC: 'https://testgeth.karachainfoundation.org',
-    dbPath: 'mongodb://karachaindemo:testdemo123@ds147589.mlab.com:47589/dex-karachain',
-    etherscanUrl: 'http://ropsten.etherscan.io',
-    etherscanAPI: 'http://ropsten.etherscan.io',
-    etherscanAPIKey: 'T1GSYD4D3NEAH44VQ34VHNDR9P316J9E7D',
+    ethRPC: 'https://localhost:8546',
+    dbPath: 'mongodb://localhost:27017/dex',
+    etherscanUrl: 'http://etherscan.io',
+    etherscanAPI: 'http://etherscan.io',
+    etherscanAPIKey: '',
     tokens: [
         {addr: '0x0000000000000000000000000000000000000000', name: 'ETH', decimals: 18},
-        {addr: '0x54477a3abc9355711bce1c7f150e9129090dcdce', name: 'VAIB', decimals: 18},
-        {addr: '0xa431133d469a128da33a978afcc4e4b75ccb3bb4', name: 'SPC', decimals: 18}
+        {addr: '0x0Df600C873dA796c3ef6D6a0472772Eb954D6986', name: 'SCO', decimals: 18},
+        {addr: '', name: 'ACEX', decimals: 18}
     ],
-    defaultPair: {token: 'VAIB', base: 'ETH'},
+    defaultPair: {token: 'SCO', base: 'ETH'},
     pairs: [
-        {token: 'VAIB', base: 'ETH'},
-        {token: 'SPC', base: 'ETH'}
+        {token: 'SCO', base: 'ETH'},
+        {token: 'ACEX', base: 'ETH'}
     ],
     dExContractABI: [
         {
